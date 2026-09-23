@@ -1,0 +1,856 @@
+[
+  {
+    "template_id": "cancer_finding_therapeutic_response",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Around the cancer-related clinical finding documented on {finding_date}, what therapeutic response is evidenced by concurrent or subsequent clinical events within {window_days} days?",
+    "answer_format": "Gold narrative covering: finding description and date, therapeutic procedures (name, date), medications changed (action, name, date), supporting lab values. Minimum 2 event types.",
+    "relevant_event_types": [
+      "clinical_finding_reported",
+      "procedure_performed",
+      "medication_action",
+      "lab_results_received"
+    ],
+    "instantiated": 94
+  },
+  {
+    "template_id": "chemo_lab_toxicity",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Around the chemotherapy procedure performed on {chemo_date}, what laboratory findings were documented within {window_days} days and what do they suggest about treatment tolerance?",
+    "answer_format": "Gold narrative covering: chemotherapy procedure name and date, lab tests drawn (name, value, date), and clinical interpretation of whether values suggest toxicity, stability, or improvement. Minimum 2 event types.",
+    "relevant_event_types": [
+      "procedure_performed",
+      "lab_results_received"
+    ],
+    "instantiated": 100
+  },
+  {
+    "template_id": "functional_status_at_encounter",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Around the visit on {encounter_date}, how was the patient's functional status described in clinical notes, and what care adjustments were made in response?",
+    "answer_format": "Gold narrative covering: note date and any functional status descriptions (quoted from note sections), medication or plan changes made at that visit (name, date), and the clinical interpretation linking functional status to the care adjustments. Minimum 2 event types.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "clinical_note_received",
+      "medication_action",
+      "clinical_plan_item_reported"
+    ],
+    "instantiated": 112
+  },
+  {
+    "template_id": "hospitalization_med_change",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Describe the clinical episode surrounding the inpatient encounter on or near {encounter_date}: what medications were started or stopped, what procedures were performed, and what conditions or findings were documented within {window_days} days?",
+    "answer_format": "Gold narrative paragraph covering: hospitalization context (dates, facility), medications changed (add/delete with dates), procedures performed (name, date), and new conditions or findings. Minimum 2 event types cited.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "medication_action",
+      "procedure_performed",
+      "condition_recorded",
+      "clinical_finding_reported"
+    ],
+    "instantiated": 114
+  },
+  {
+    "template_id": "inpatient_procedure_cluster",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "During the inpatient stay that began on {start_date}, what procedures were performed and what clinical findings or notes were documented?",
+    "answer_format": "Gold narrative covering: inpatient encounter dates and facility, procedures performed (name, date), clinical notes authored (type, date, key content), and findings recorded. Minimum 2 event types.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "procedure_performed",
+      "clinical_note_received",
+      "clinical_finding_reported"
+    ],
+    "instantiated": 117
+  },
+  {
+    "template_id": "lab_findings_drove_decision",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "What lab results or diagnostic findings were documented around {anchor_date}, and what treatment decisions \u2014 medication changes, procedures, or plan items \u2014 followed within {window_days} days?",
+    "answer_format": "Gold narrative covering: lab tests or findings (name, value or description, date), subsequent decisions (medications started or stopped, procedures ordered, plan items initiated), and a causal rationale linking the diagnostic evidence to the clinical response. Minimum 2 event types.",
+    "relevant_event_types": [
+      "lab_results_received",
+      "clinical_finding_reported",
+      "medication_action",
+      "procedure_performed",
+      "clinical_plan_item_reported"
+    ],
+    "instantiated": 108
+  },
+  {
+    "template_id": "lab_worsening_medication_adjustment",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Following the lab result for '{test_name}' dated {lab_date}, what medication changes were made within {window_days} days and how do they clinically relate to the lab finding?",
+    "answer_format": "Gold narrative covering: lab test name, value, and date; subsequent medication add or delete events (name, action, date); clinical rationale connecting the lab result to the medication change. Minimum 2 event types.",
+    "relevant_event_types": [
+      "lab_results_received",
+      "medication_action"
+    ],
+    "instantiated": 63
+  },
+  {
+    "template_id": "medication_change_lab_followup",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "After the medication '{medication_name}' was added on {add_date}, what laboratory results were obtained within {window_days} days and what do they indicate about the patient's response?",
+    "answer_format": "Gold narrative covering: medication name and start date, labs drawn (test name, value, unit, date), clinical interpretation of values in context of the new medication. Minimum 2 event types.",
+    "relevant_event_types": [
+      "medication_action",
+      "lab_results_received"
+    ],
+    "instantiated": 69
+  },
+  {
+    "template_id": "new_diagnosis_treatment_initiation",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "When the condition '{condition_name}' was recorded for this patient, what therapeutic interventions (medications, procedures, plan items) followed within {window_days} days?",
+    "answer_format": "Gold narrative covering: condition name and diagnosis date, subsequent medications added (name, date), procedures ordered (name, date), and plan items initiated. Minimum 2 event types.",
+    "relevant_event_types": [
+      "condition_recorded",
+      "medication_action",
+      "procedure_performed",
+      "clinical_plan_item_reported"
+    ],
+    "instantiated": 115
+  },
+  {
+    "template_id": "plan_item_to_procedure",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Were any clinical plan items recorded around {plan_date} subsequently fulfilled by documented procedures within {window_days} days? Describe the plan items and corresponding procedures.",
+    "answer_format": "Gold narrative covering: plan items (description, action_type, recorded_at), and subsequent procedures performed (name, performed_date) that appear to fulfill the plan. Minimum 2 event types.",
+    "relevant_event_types": [
+      "clinical_plan_item_reported",
+      "procedure_performed"
+    ],
+    "instantiated": 50
+  },
+  {
+    "template_id": "post_hospitalization_transition",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "Following the hospitalization that ended around {discharge_date}, what medications were put in place and what follow-up plans were documented within {window_days} days?",
+    "answer_format": "Gold narrative covering: hospitalization end date and facility, medications added at or after discharge (name, date), follow-up plan items (description, date), and any outpatient or follow-up encounters documented in the window. Minimum 2 event types.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "medication_action",
+      "clinical_plan_item_reported",
+      "clinical_note_received"
+    ],
+    "instantiated": 56
+  },
+  {
+    "template_id": "post_procedure_complications",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "What side effects or complications were documented in the {window_days} days following the procedure on {procedure_date}, and how were they managed?",
+    "answer_format": "Gold narrative covering: procedure name and date, subsequent findings or documented complaints (description, date), medications added or changed in response (name, date), and care encounters related to the complication. Minimum 2 event types.",
+    "relevant_event_types": [
+      "procedure_performed",
+      "clinical_finding_reported",
+      "unstructured_report_received",
+      "medication_action",
+      "care_encounter_reported"
+    ],
+    "instantiated": 116
+  },
+  {
+    "template_id": "treatment_phase_transition_activity",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "When this patient transitioned to the '{new_phase}' treatment phase on {effective_date}, what clinical activity\u2014encounters, medications, and procedures\u2014occurred within {window_days} days of that transition?",
+    "answer_format": "Gold narrative covering: treatment phase name and effective date, encounters (type, facility, date), medications added/stopped (name, date), procedures performed (name, date). Minimum 2 event types.",
+    "relevant_event_types": [
+      "treatment_phase_changed",
+      "care_encounter_reported",
+      "medication_action",
+      "procedure_performed"
+    ],
+    "instantiated": 9
+  },
+  {
+    "template_id": "treatment_response_context",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "How did this patient's clinical picture evolve in the {window_days} days following {anchor_date}? What findings or assessments were documented and what do they indicate about how the patient was responding to treatment?",
+    "answer_format": "Gold narrative covering: anchor date context (procedure or encounter), clinical findings or lab results indicating response (with dates and quoted descriptions), any medication or plan changes that followed, and an integrated interpretation of the trajectory. Minimum 2 event types.",
+    "relevant_event_types": [
+      "clinical_finding_reported",
+      "lab_results_received",
+      "procedure_performed",
+      "medication_action"
+    ],
+    "instantiated": 96
+  },
+  {
+    "template_id": "vitals_lab_encounter_cluster",
+    "task": "compilation",
+    "question_kind": null,
+    "question_pattern": "During the encounter on {encounter_date}, what vital sign measurements and laboratory results were obtained, and what do they collectively indicate about the patient's clinical status at that time?",
+    "answer_format": "Gold narrative covering: encounter date, vital signs (measurements with values and units), lab results (test name, value, unit, date), and integrated clinical interpretation. Minimum 2 event types.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "vitals_measurement",
+      "lab_results_received"
+    ],
+    "instantiated": 109
+  },
+  {
+    "template_id": "active_conditions",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "How many conditions are recorded for this patient?",
+    "answer_format": "Integer count of conditions recorded.",
+    "relevant_event_types": [
+      "condition_recorded"
+    ],
+    "instantiated": 7
+  },
+  {
+    "template_id": "chemotherapy_count",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "How many chemotherapy sessions has this patient had?",
+    "answer_format": "Integer count of chemotherapy procedures performed.",
+    "relevant_event_types": [
+      "procedure_performed"
+    ],
+    "instantiated": 3
+  },
+  {
+    "template_id": "inpatient_count",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "How many inpatient hospitalizations does this patient's record contain?",
+    "answer_format": "Integer count of inpatient encounters.",
+    "relevant_event_types": [
+      "care_encounter_reported"
+    ],
+    "instantiated": 40
+  },
+  {
+    "template_id": "last_medication_added",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What was the most recently added medication for this patient and on what date was it prescribed?",
+    "answer_format": "Medication name, prescription date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 31
+  },
+  {
+    "template_id": "last_medication_discontinued",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What was the most recently discontinued medication for this patient and on what date was it stopped?",
+    "answer_format": "Medication name, discontinuation date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 78
+  },
+  {
+    "template_id": "latest_treatment_phase",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What phase of treatment is this patient on?",
+    "answer_format": "Treatment phase name and the date it took effect (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "treatment_phase_changed"
+    ],
+    "instantiated": 10
+  },
+  {
+    "template_id": "medication_count",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "How many medications is this patient on?",
+    "answer_format": "Integer count of medications currently prescribed (net adds minus discontinuations).",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 1
+  },
+  {
+    "template_id": "most_recent_clinical_finding",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What was the most recent clinical finding recorded for this patient and when was it documented?",
+    "answer_format": "Finding description, date documented (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "clinical_finding_reported"
+    ],
+    "instantiated": 30
+  },
+  {
+    "template_id": "most_recent_condition",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What is the most recently recorded condition for this patient and what is its clinical status?",
+    "answer_format": "Condition name, clinical status, diagnosis date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "condition_recorded"
+    ],
+    "instantiated": 93
+  },
+  {
+    "template_id": "most_recent_encounter",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What was the most recent care encounter for this patient, what type was it, and at which facility did it occur?",
+    "answer_format": "Single encounter: encounter_type, facility name, start_date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "care_encounter_reported"
+    ],
+    "instantiated": 110
+  },
+  {
+    "template_id": "most_recent_immunization",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What immunizations have been administered to this patient?",
+    "answer_format": "List of vaccine names with administered dates (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "immunization_reported"
+    ],
+    "instantiated": 35
+  },
+  {
+    "template_id": "most_recent_lab_panel",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What unique lab panels have been collected from this patient?",
+    "answer_format": "List of distinct lab panel names seen in the record.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 29
+  },
+  {
+    "template_id": "most_recent_procedure",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What was the most recent procedure performed for this patient and on what date?",
+    "answer_format": "Procedure name (SNOMED code optional), performed_date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "procedure_performed"
+    ],
+    "instantiated": 45
+  },
+  {
+    "template_id": "pending_plan_items",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "What clinical plan items are still pending for this patient?",
+    "answer_format": "Bulleted list of outstanding plan item descriptions with the date each was recorded (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "clinical_plan_item_reported"
+    ],
+    "instantiated": 8
+  },
+  {
+    "template_id": "total_lab_events",
+    "task": "factual",
+    "question_kind": null,
+    "question_pattern": "How many labs are present in this patient's record?",
+    "answer_format": "Integer count of lab result events.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 21
+  },
+  {
+    "template_id": "alarming_chief_complaint_note",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Does any clinical note record an alarming chief complaint (e.g., chest pain, shortness of breath, altered consciousness, emergency symptom) for this patient? If so, which note and when?",
+    "answer_format": "Yes/No. If yes: note date (YYYY-MM-DD), alarming chief complaint quoted verbatim.",
+    "relevant_event_types": [
+      "clinical_note_received"
+    ],
+    "instantiated": 7
+  },
+  {
+    "template_id": "alarming_note_text",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Does any clinical report contain alarming language about a serious symptom or diagnosis? If so, quote the key passage and the report date.",
+    "answer_format": "Yes/No. If yes: report date (YYYY-MM-DD), quoted alarming passage (verbatim, \u226450 words).",
+    "relevant_event_types": [
+      "unstructured_report_received"
+    ],
+    "instantiated": 100
+  },
+  {
+    "template_id": "cancer_condition",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Is there a cancer diagnosis recorded for this patient? If so, what type and when was it diagnosed?",
+    "answer_format": "Yes/No. If yes: condition name, clinical status, diagnosis date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "condition_recorded"
+    ],
+    "instantiated": 112
+  },
+  {
+    "template_id": "chemo_procedure_plus_med_delete",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was any medication stopped within a week of a chemotherapy session? If so, which medication and when?",
+    "answer_format": "Yes/No. If yes: chemotherapy procedure name and date (YYYY-MM-DD), medication discontinued and date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "procedure_performed",
+      "medication_action"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "distant_metastases",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Is there a clinical finding indicating distant metastases in this patient's record? If so, when was it recorded?",
+    "answer_format": "Yes/No. If yes: finding description, date documented (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "clinical_finding_reported"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "emergency_inpatient",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was this patient ever hospitalized? If so, when and at which facility?",
+    "answer_format": "Yes/No. If yes: facility name, admission date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "care_encounter_reported"
+    ],
+    "instantiated": 107
+  },
+  {
+    "template_id": "encounter_cluster_investigation",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Is there a date where multiple different clinical events cluster within a 3-day window suggesting a significant episode? If so, describe what happened.",
+    "answer_format": "Yes/No. If yes: center date (YYYY-MM-DD), description of each clinical event within the \u00b13-day window.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "procedure_performed",
+      "medication_action",
+      "lab_results_received",
+      "condition_recorded"
+    ],
+    "instantiated": 13
+  },
+  {
+    "template_id": "inpatient_plus_new_condition",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was there an inpatient encounter that coincided (within 3 days) with a newly recorded condition? If so, describe both events.",
+    "answer_format": "Yes/No. If yes: admission date (YYYY-MM-DD) and facility; condition name and diagnosis date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "condition_recorded"
+    ],
+    "instantiated": 10
+  },
+  {
+    "template_id": "labs_on_date",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "What lab results were collected on {date}?",
+    "answer_format": "List of lab tests collected on that date with result values and units, or 'No labs collected on this date.'",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "medication_discontinuation",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was any medication discontinued for this patient? If so, which medication and when?",
+    "answer_format": "Yes/No. If yes: medication name, discontinuation date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 117
+  },
+  {
+    "template_id": "medication_on_date",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "What medications were prescribed or changed on {date}?",
+    "answer_format": "List of medications with whether each was started or stopped on that date, or 'No medication changes recorded on this date.'",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "new_medication_opioid",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was any opioid analgesic added to this patient's regimen? If so, which one and when?",
+    "answer_format": "Yes/No. If yes: medication name, prescription date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "note_mentions_new_prescription",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Does any clinical note's Assessment and Plan or Plan section mention a new medication being prescribed? If so, which medication and in which note?",
+    "answer_format": "Yes/No. If yes: note date (YYYY-MM-DD), medication name quoted from the plan section.",
+    "relevant_event_types": [
+      "clinical_note_received"
+    ],
+    "instantiated": 7
+  },
+  {
+    "template_id": "procedure_on_date",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "What procedure was performed on {date}?",
+    "answer_format": "Procedure name and date (YYYY-MM-DD), or 'No procedure recorded on this date.'",
+    "relevant_event_types": [
+      "procedure_performed"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "radiation_therapy",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was radiation therapy performed for this patient? If so, what type of radiation procedure and on what date?",
+    "answer_format": "Yes/No. If yes: procedure name, date performed (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "procedure_performed"
+    ],
+    "instantiated": 99
+  },
+  {
+    "template_id": "treatment_phase_to_active",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Was this patient ever placed on active treatment? If so, when did that begin?",
+    "answer_format": "Yes/No. If yes: treatment phase name, effective date (YYYY-MM-DD).",
+    "relevant_event_types": [
+      "treatment_phase_changed"
+    ],
+    "instantiated": 12
+  },
+  {
+    "template_id": "visit_on_date",
+    "task": "needle",
+    "question_kind": null,
+    "question_pattern": "Where did this patient visit on {date}?",
+    "answer_format": "Facility name and encounter type (e.g. inpatient, outpatient) on that date, or 'No encounter recorded on this date.'",
+    "relevant_event_types": [
+      "care_encounter_reported"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "alt_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in alanine aminotransferase (ALT) over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (U/L) on YYYY-MM-DD; Last value (U/L) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 3
+  },
+  {
+    "template_id": "ast_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in aspartate aminotransferase (AST) over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (U/L) on YYYY-MM-DD; Last value (U/L) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 0
+  },
+  {
+    "template_id": "calcium_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in serum calcium over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mg/dL) on YYYY-MM-DD; Last value (mg/dL) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 53
+  },
+  {
+    "template_id": "clinical_finding_content_shift",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did the clinical findings documented for this patient change in character between {start_date} and {end_date}? Did the language shift toward worsening, improving, or new concerns?",
+    "answer_format": "Gold narrative: quoted or paraphrased representative finding descriptions per period; characterization of the shift (response language \u2192 progression language | stable concern | new concerns emerging); corroborated by condition_recorded or lab_results_received. Minimum 2 periods with distinct finding content.",
+    "relevant_event_types": [
+      "clinical_finding_reported",
+      "condition_recorded",
+      "lab_results_received"
+    ],
+    "instantiated": 50
+  },
+  {
+    "template_id": "condition_accumulation",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did the number of newly recorded conditions evolve between {start_date} and {end_date}? Does the pattern suggest a period of clinical deterioration, recovery, or stability?",
+    "answer_format": "Gold narrative: new condition count per period; notable condition types; directional label (deteriorating | recovering | stable); supported by clinical_finding_reported or medication_action.",
+    "relevant_event_types": [
+      "condition_recorded",
+      "clinical_finding_reported"
+    ],
+    "instantiated": 33
+  },
+  {
+    "template_id": "creatinine_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in serum creatinine over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mg/dL) on YYYY-MM-DD; Last value (mg/dL) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 64
+  },
+  {
+    "template_id": "diastolic_bp_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in diastolic blood pressure over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mmHg) on YYYY-MM-DD; Last value (mmHg) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "vitals_measurement"
+    ],
+    "instantiated": 56
+  },
+  {
+    "template_id": "encounter_frequency",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did the frequency of care encounters change between {start_date} and {end_date}? Was clinical utilization increasing, stable, or decreasing over that period?",
+    "answer_format": "Gold narrative with encounter count per period; directional label (increasing | stable | decreasing); corroborated by procedure_performed counts across the same periods.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "procedure_performed"
+    ],
+    "instantiated": 41
+  },
+  {
+    "template_id": "glucose_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in blood glucose over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mg/dL) on YYYY-MM-DD; Last value (mg/dL) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 62
+  },
+  {
+    "template_id": "heart_rate_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in heart rate over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (bpm) on YYYY-MM-DD; Last value (bpm) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "vitals_measurement"
+    ],
+    "instantiated": 54
+  },
+  {
+    "template_id": "hemoglobin_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in hemoglobin over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (g/dL) on YYYY-MM-DD; Last value (g/dL) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 53
+  },
+  {
+    "template_id": "hospitalization_frequency",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "Between {start_date} and {end_date}, how did this patient's pattern of hospitalizations change? Was the patient admitted more, less, or about as often as time went on?",
+    "answer_format": "Gold narrative: inpatient count per period; directional label (increasing | stable | decreasing); corroborated by procedure_performed or lab_results_received during inpatient windows.",
+    "relevant_event_types": [
+      "care_encounter_reported",
+      "procedure_performed"
+    ],
+    "instantiated": 41
+  },
+  {
+    "template_id": "lab_panel_diversity",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "Did the range of lab tests ordered for this patient broaden or narrow between {start_date} and {end_date}? What does that suggest about how the clinical focus evolved?",
+    "answer_format": "Gold narrative: distinct lab panels or test categories per period; directional label (broadening | narrowing | stable scope); clinical interpretation linking the change in test diversity to the evolving management focus (e.g. broader monitoring after new diagnosis, narrowing to specific marker tracking). Corroborated by encounter or medication data.",
+    "relevant_event_types": [
+      "lab_results_received",
+      "care_encounter_reported",
+      "condition_recorded"
+    ],
+    "instantiated": 49
+  },
+  {
+    "template_id": "lab_trajectory",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did {test_name} values trend between {start_date} and {end_date}? Was the overall direction improving, worsening, or stable?",
+    "answer_format": "Gold narrative: representative value (or range) per period with dates; directional label (improving | stable | worsening) with rationale; corroborated by vitals_measurement or medication_action if clinically relevant.",
+    "relevant_event_types": [
+      "lab_results_received",
+      "vitals_measurement"
+    ],
+    "instantiated": 42
+  },
+  {
+    "template_id": "medication_burden",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did this patient's medication regimen evolve between {start_date} and {end_date}? Were medications being added at a greater rate than discontinued, or was the regimen winding down?",
+    "answer_format": "Gold narrative: additions vs discontinuations per period; net direction (escalating | stable | de-escalating); interpretation grounded in \u22652 periods showing a consistent pattern.",
+    "relevant_event_types": [
+      "medication_action"
+    ],
+    "instantiated": 16
+  },
+  {
+    "template_id": "medication_class_evolution",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "Did the types of medications prescribed change between {start_date} and {end_date}? For instance, were supportive or symptom-management drugs added over time alongside (or instead of) primary treatment agents?",
+    "answer_format": "Gold narrative: medication categories present per period with representative drug names; directional characterization (primary treatment dominant early \u2192 supportive agents accumulating later, or similar); causal interpretation linking medication class shift to clinical trajectory. Minimum 2 event types.",
+    "relevant_event_types": [
+      "medication_action",
+      "clinical_finding_reported",
+      "condition_recorded"
+    ],
+    "instantiated": 44
+  },
+  {
+    "template_id": "note_content_evolution",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did the clinical concerns documented in notes change between {start_date} and {end_date}? Were different symptoms, diagnoses, or plans being discussed at different points?",
+    "answer_format": "Gold narrative: dominant clinical themes per period drawn from note section content (quoted where informative); description of how themes shifted over time; corroborated by medication_action or condition_recorded events from the same periods. Minimum 2 periods showing distinct themes.",
+    "relevant_event_types": [
+      "clinical_note_received",
+      "condition_recorded",
+      "medication_action"
+    ],
+    "instantiated": 107
+  },
+  {
+    "template_id": "potassium_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in serum potassium over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mmol/L) on YYYY-MM-DD; Last value (mmol/L) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 61
+  },
+  {
+    "template_id": "procedure_intensity",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How did the nature and volume of procedures change between {start_date} and {end_date}? Did procedural activity escalate, plateau, or wind down?",
+    "answer_format": "Gold narrative: procedure count and dominant types per period; directional label (escalating | stable | declining); corroborated by care_encounter_reported counts.",
+    "relevant_event_types": [
+      "procedure_performed",
+      "care_encounter_reported"
+    ],
+    "instantiated": 40
+  },
+  {
+    "template_id": "procedure_type_shift",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "Did the type of procedures this patient underwent shift between {start_date} and {end_date} \u2014 for example, from diagnostic toward therapeutic, or from active treatment toward monitoring?",
+    "answer_format": "Gold narrative: dominant procedure category per period (diagnostic | therapeutic | mixed); shift description with specific procedure names and dates as evidence; interpretation of what the shift implies clinically. Minimum 2 periods showing a change.",
+    "relevant_event_types": [
+      "procedure_performed",
+      "care_encounter_reported"
+    ],
+    "instantiated": 40
+  },
+  {
+    "template_id": "sodium_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in serum sodium over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mmol/L) on YYYY-MM-DD; Last value (mmol/L) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "lab_results_received"
+    ],
+    "instantiated": 61
+  },
+  {
+    "template_id": "systolic_bp_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in systolic blood pressure over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (mmHg) on YYYY-MM-DD; Last value (mmHg) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "vitals_measurement"
+    ],
+    "instantiated": 56
+  },
+  {
+    "template_id": "treatment_escalation",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "Looking across the period from {start_date} to {end_date}, did treatment appear to be escalating, holding steady, or tapering? What evidence supports that interpretation?",
+    "answer_format": "Gold narrative: per-period summary of key events (phase changes, medication net change, procedure counts); overall trajectory label (escalating | maintenance | de-escalating); causal argument connecting \u22652 event types.",
+    "relevant_event_types": [
+      "treatment_phase_changed",
+      "medication_action",
+      "procedure_performed"
+    ],
+    "instantiated": 40
+  },
+  {
+    "template_id": "vital_stability",
+    "task": "trajectory",
+    "question_kind": "timeline_trajectory",
+    "question_pattern": "How stable were this patient's {vital_name} readings between {start_date} and {end_date}? Was there a consistent directional trend?",
+    "answer_format": "Gold narrative: vital parameter; min-max range per period with dates; directional label (stable | trending-up | trending-down); corroborated with lab or encounter data from the same periods.",
+    "relevant_event_types": [
+      "vitals_measurement",
+      "lab_results_received"
+    ],
+    "instantiated": 42
+  },
+  {
+    "template_id": "weight_trend",
+    "task": "trajectory",
+    "question_kind": "marker_trend",
+    "question_pattern": "What is the trend in patient weight over the observation window? State the first recorded value and date, the last recorded value and date, and, considering the linear trend across all measurements, whether the overall direction is significantly stable, increasing, or decreasing.",
+    "answer_format": "First value (kg) on YYYY-MM-DD; Last value (kg) on YYYY-MM-DD; Direction: increasing | stable | decreasing.",
+    "relevant_event_types": [
+      "vitals_measurement"
+    ],
+    "instantiated": 56
+  }
+]

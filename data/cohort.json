@@ -1,0 +1,1172 @@
+[
+  {
+    "patient_id": "69d6865ef9deedfdfef6064c",
+    "fhir_patient_id": "fd25b51b-dc2a-4edb-b7c9-2c5d178a0ee7",
+    "event_count": 293,
+    "first_event": "1994-10-27T15:58:59-04:00",
+    "last_event": "2000-06-29T15:58:59.883-04:00",
+    "window_start": "1994-10-01",
+    "window_end": "2000-06-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68662f9deedfdfef6064d",
+    "fhir_patient_id": "06998308-84b5-432c-8e80-3366b690738d",
+    "event_count": 745,
+    "first_event": "1997-05-07T20:19:31-04:00",
+    "last_event": "2013-03-31T20:19:31.722-04:00",
+    "window_start": "1997-05-01",
+    "window_end": "2013-04-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68666f9deedfdfef6064f",
+    "fhir_patient_id": "8ab28767-3f9f-444f-b825-e234671b37d3",
+    "event_count": 488,
+    "first_event": "1987-09-26T12:59:00-04:00",
+    "last_event": "2019-09-28T12:59:00.444-04:00",
+    "window_start": "1987-09-01",
+    "window_end": "2019-09-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6866af9deedfdfef60651",
+    "fhir_patient_id": "6fcf56ed-8ad8-4395-a966-9ebee3822656",
+    "event_count": 876,
+    "first_event": "2000-05-12T23:02:57-04:00",
+    "last_event": "2019-08-30T23:02:57.261-04:00",
+    "window_start": "2000-05-01",
+    "window_end": "2019-08-31",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d6866cf9deedfdfef60652",
+    "fhir_patient_id": "1c83fb03-d139-4626-bb39-4a062c22b533",
+    "event_count": 439,
+    "first_event": "2012-09-04T19:30:54-04:00",
+    "last_event": "2019-07-02T19:30:54.011-04:00",
+    "window_start": "2012-09-01",
+    "window_end": "2019-07-31",
+    "question_count": 27
+  },
+  {
+    "patient_id": "69d6866ff9deedfdfef60653",
+    "fhir_patient_id": "5efa5654-8190-4f4d-9ba3-3b79448440b5",
+    "event_count": 540,
+    "first_event": "1989-02-17T08:47:14-05:00",
+    "last_event": "2001-11-05T08:47:14.372-05:00",
+    "window_start": "1989-02-01",
+    "window_end": "2001-11-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68674f9deedfdfef60655",
+    "fhir_patient_id": "cc4c634f-c2ff-4963-b75a-fa2e33dc208f",
+    "event_count": 564,
+    "first_event": "1973-08-13T17:01:04-04:00",
+    "last_event": "1988-06-13T17:01:04.029-04:00",
+    "window_start": "1973-08-01",
+    "window_end": "1988-06-30",
+    "question_count": 31
+  },
+  {
+    "patient_id": "69d6867af9deedfdfef60657",
+    "fhir_patient_id": "c762bbaa-b207-4b4d-8123-e5bc93e3b99b",
+    "event_count": 612,
+    "first_event": "1996-04-10T22:48:41-04:00",
+    "last_event": "2014-07-23T22:48:41.500-04:00",
+    "window_start": "1996-04-01",
+    "window_end": "2014-07-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6867cf9deedfdfef60658",
+    "fhir_patient_id": "de3666a6-b4e3-4ec8-9ae7-bde168e03465",
+    "event_count": 365,
+    "first_event": "1998-01-16T06:07:40-05:00",
+    "last_event": "2018-02-02T06:07:40.262-05:00",
+    "window_start": "1998-01-01",
+    "window_end": "2018-02-28",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68680f9deedfdfef60659",
+    "fhir_patient_id": "42c179ad-99bd-4ca4-861f-7151d774a243",
+    "event_count": 406,
+    "first_event": "1982-05-10T09:06:30-04:00",
+    "last_event": "1995-05-15T09:06:30.926-04:00",
+    "window_start": "1982-05-01",
+    "window_end": "1995-05-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68683f9deedfdfef6065a",
+    "fhir_patient_id": "ddd8d7a4-5992-4572-a231-80bc305298b1",
+    "event_count": 350,
+    "first_event": "2001-10-04T23:45:21-04:00",
+    "last_event": "2016-04-21T23:45:21.526-04:00",
+    "window_start": "2001-10-01",
+    "window_end": "2016-04-30",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d68686f9deedfdfef6065b",
+    "fhir_patient_id": "907083ad-22c9-4067-8321-a6622ce9792c",
+    "event_count": 428,
+    "first_event": "1993-01-21T00:20:25-05:00",
+    "last_event": "2017-09-28T01:20:25.907-04:00",
+    "window_start": "1993-01-01",
+    "window_end": "2017-09-30",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d68688f9deedfdfef6065c",
+    "fhir_patient_id": "31665402-bfc5-45e1-b12a-fdc42836f50a",
+    "event_count": 721,
+    "first_event": "2009-03-02T02:38:46-05:00",
+    "last_event": "2017-03-27T03:38:46.959-04:00",
+    "window_start": "2009-03-01",
+    "window_end": "2017-03-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d6868ff9deedfdfef6065d",
+    "fhir_patient_id": "f9e2ec3e-731f-4341-8a6f-dffa5a44b373",
+    "event_count": 1091,
+    "first_event": "2002-09-03T11:34:32-04:00",
+    "last_event": "2003-05-31T11:34:32.766-04:00",
+    "window_start": "2002-09-01",
+    "window_end": "2003-05-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d686acf9deedfdfef6065e",
+    "fhir_patient_id": "aa016b70-2fbe-4aa2-aa24-ba31c29b147d",
+    "event_count": 426,
+    "first_event": "1987-05-17T03:32:58-04:00",
+    "last_event": "2016-08-01T03:32:58.067-04:00",
+    "window_start": "1987-05-01",
+    "window_end": "2016-08-31",
+    "question_count": 27
+  },
+  {
+    "patient_id": "69d686aef9deedfdfef6065f",
+    "fhir_patient_id": "4ff6edf7-a10c-4895-9522-a01c82c78aa0",
+    "event_count": 400,
+    "first_event": "1943-12-06T13:00:17-04:00",
+    "last_event": "1967-03-06T12:00:17.567-05:00",
+    "window_start": "1943-12-01",
+    "window_end": "1967-03-31",
+    "question_count": 31
+  },
+  {
+    "patient_id": "69d686b2f9deedfdfef60660",
+    "fhir_patient_id": "81ac6a30-f043-4a36-9942-0091d6cca2c4",
+    "event_count": 505,
+    "first_event": "2008-01-19T04:54:56-05:00",
+    "last_event": "2019-05-11T05:54:56.323-04:00",
+    "window_start": "2008-01-01",
+    "window_end": "2019-05-31",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d686b5f9deedfdfef60662",
+    "fhir_patient_id": "b6f8ad9c-27aa-4422-b473-3abdb0b00646",
+    "event_count": 609,
+    "first_event": "1994-05-12T02:47:59-04:00",
+    "last_event": "2016-05-09T02:47:59.547-04:00",
+    "window_start": "1994-05-01",
+    "window_end": "2016-05-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d686c2f9deedfdfef60666",
+    "fhir_patient_id": "e7782b13-c082-4e75-a908-e80cf03e5434",
+    "event_count": 600,
+    "first_event": "2008-06-19T02:05:53-04:00",
+    "last_event": "2019-08-29T02:05:53.637-04:00",
+    "window_start": "2008-06-01",
+    "window_end": "2019-08-31",
+    "question_count": 31
+  },
+  {
+    "patient_id": "69d686ccf9deedfdfef6066a",
+    "fhir_patient_id": "f417dced-733d-45fe-a945-4f2f12c78cef",
+    "event_count": 484,
+    "first_event": "1969-05-25T10:54:56-04:00",
+    "last_event": "1984-05-06T10:54:56.553-04:00",
+    "window_start": "1969-05-01",
+    "window_end": "1984-05-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d686daf9deedfdfef60670",
+    "fhir_patient_id": "f7a124b6-1f58-4c3c-944d-aa3cf16bf8c5",
+    "event_count": 500,
+    "first_event": "2009-12-04T18:53:47-05:00",
+    "last_event": "2018-02-02T18:53:47.150-05:00",
+    "window_start": "2009-12-01",
+    "window_end": "2018-02-28",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d686e4f9deedfdfef60673",
+    "fhir_patient_id": "e3ab8622-88cd-44c8-9c4b-87bcfee7f4fc",
+    "event_count": 793,
+    "first_event": "2001-11-08T13:34:17-05:00",
+    "last_event": "2020-02-20T13:34:17.660-05:00",
+    "window_start": "2001-11-01",
+    "window_end": "2020-02-29",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d686e9f9deedfdfef60674",
+    "fhir_patient_id": "c9a3ec7e-cdbc-475b-921d-245648b33fcd",
+    "event_count": 819,
+    "first_event": "2004-10-28T11:44:05-04:00",
+    "last_event": "2018-06-05T11:44:05.932-04:00",
+    "window_start": "2004-10-01",
+    "window_end": "2018-06-30",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d686ebf9deedfdfef60675",
+    "fhir_patient_id": "c551ab6b-9373-498e-962e-6e03731dd4b9",
+    "event_count": 478,
+    "first_event": "2004-04-19T10:32:20-04:00",
+    "last_event": "2018-08-23T10:32:20.608-04:00",
+    "window_start": "2004-04-01",
+    "window_end": "2018-08-31",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d686f2f9deedfdfef60678",
+    "fhir_patient_id": "b1db036c-75d8-473e-ace5-aa624f8c072e",
+    "event_count": 528,
+    "first_event": "1954-11-16T14:27:33-05:00",
+    "last_event": "1963-07-30T15:27:33.729-04:00",
+    "window_start": "1954-11-01",
+    "window_end": "1963-07-31",
+    "question_count": 27
+  },
+  {
+    "patient_id": "69d686fef9deedfdfef6067b",
+    "fhir_patient_id": "635e1e46-b484-43f4-b1c5-8975e06c8272",
+    "event_count": 973,
+    "first_event": "1999-10-02T21:32:11-04:00",
+    "last_event": "2015-09-28T21:32:11.763-04:00",
+    "window_start": "1999-10-01",
+    "window_end": "2015-09-30",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68707f9deedfdfef6067e",
+    "fhir_patient_id": "47c4dd79-95dc-4b0b-b155-ee593283d3ff",
+    "event_count": 675,
+    "first_event": "1993-11-21T12:39:51-05:00",
+    "last_event": "2018-02-10T12:39:51.925-05:00",
+    "window_start": "1993-11-01",
+    "window_end": "2018-02-28",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d6870af9deedfdfef6067f",
+    "fhir_patient_id": "0e197e39-92cc-4621-b60b-0e0544fa7c49",
+    "event_count": 832,
+    "first_event": "2005-04-15T04:52:20-04:00",
+    "last_event": "2017-06-23T04:52:20.483-04:00",
+    "window_start": "2005-04-01",
+    "window_end": "2017-06-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6870cf9deedfdfef60680",
+    "fhir_patient_id": "32cd78c6-28e9-4a68-a59a-2e9f14920422",
+    "event_count": 319,
+    "first_event": "1995-05-14T17:32:31-04:00",
+    "last_event": "2002-03-10T16:32:31.441-05:00",
+    "window_start": "1995-05-01",
+    "window_end": "2002-03-31",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d68710f9deedfdfef60681",
+    "fhir_patient_id": "f28f2b56-3f27-4acc-9412-3cbcae88c89e",
+    "event_count": 497,
+    "first_event": "2006-05-06T23:27:40-04:00",
+    "last_event": "2018-09-08T23:27:40.632-04:00",
+    "window_start": "2006-05-01",
+    "window_end": "2018-09-30",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68721f9deedfdfef60687",
+    "fhir_patient_id": "3c0109e4-c4d2-487e-a01c-b14414fc5e88",
+    "event_count": 898,
+    "first_event": "2004-11-25T17:43:59-05:00",
+    "last_event": "2019-03-14T18:43:59.830-04:00",
+    "window_start": "2004-11-01",
+    "window_end": "2019-03-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68724f9deedfdfef60688",
+    "fhir_patient_id": "f026430f-3996-44d5-bd67-d6c82f8e1c8f",
+    "event_count": 381,
+    "first_event": "2011-04-15T13:34:52-04:00",
+    "last_event": "2018-09-21T13:34:52.845-04:00",
+    "window_start": "2011-04-01",
+    "window_end": "2018-09-30",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d6872bf9deedfdfef6068b",
+    "fhir_patient_id": "84194c17-44b6-4265-b40d-76becb0ce44c",
+    "event_count": 396,
+    "first_event": "1983-03-10T00:44:51-05:00",
+    "last_event": "1993-09-23T01:44:51.238-04:00",
+    "window_start": "1983-03-01",
+    "window_end": "1993-09-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68739f9deedfdfef6068f",
+    "fhir_patient_id": "f083a7ab-d894-4174-a382-1d43a1953e2b",
+    "event_count": 553,
+    "first_event": "2010-08-25T23:54:36-04:00",
+    "last_event": "2020-04-05T23:54:36.312-04:00",
+    "window_start": "2010-08-01",
+    "window_end": "2020-04-30",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68743f9deedfdfef60690",
+    "fhir_patient_id": "630bac75-a65f-49f6-8f90-461d3c420145",
+    "event_count": 366,
+    "first_event": "2007-07-08T03:04:12-04:00",
+    "last_event": "2019-12-27T02:04:12.582-05:00",
+    "window_start": "2007-07-01",
+    "window_end": "2019-12-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d6875cf9deedfdfef60692",
+    "fhir_patient_id": "fba7ca01-29bc-41ba-8abc-ae97cbee7247",
+    "event_count": 554,
+    "first_event": "2004-07-20T19:45:16-04:00",
+    "last_event": "2018-10-18T19:45:16.345-04:00",
+    "window_start": "2004-07-01",
+    "window_end": "2018-10-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6877af9deedfdfef60694",
+    "fhir_patient_id": "b386d328-8300-4633-a6fd-09bc9f19dd1c",
+    "event_count": 496,
+    "first_event": "2008-09-19T14:30:34-04:00",
+    "last_event": "2020-04-02T14:30:34.372-04:00",
+    "window_start": "2008-09-01",
+    "window_end": "2020-04-30",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68785f9deedfdfef60695",
+    "fhir_patient_id": "36190ebe-63ac-41b5-83ff-54523f1e3183",
+    "event_count": 545,
+    "first_event": "2003-09-08T06:19:45-04:00",
+    "last_event": "2017-12-09T05:19:45.111-05:00",
+    "window_start": "2003-09-01",
+    "window_end": "2017-12-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d687b7f9deedfdfef60696",
+    "fhir_patient_id": "5bac58f3-548e-47ff-9772-c2afc1db3d14",
+    "event_count": 260,
+    "first_event": "2008-03-02T02:04:04-05:00",
+    "last_event": "2017-04-15T03:04:04.368-04:00",
+    "window_start": "2008-03-01",
+    "window_end": "2017-04-30",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d687d7f9deedfdfef60697",
+    "fhir_patient_id": "71eded91-07d2-41ba-80a1-788f3d9ae46a",
+    "event_count": 508,
+    "first_event": "2006-12-29T20:53:43-05:00",
+    "last_event": "2018-08-03T21:53:43.608-04:00",
+    "window_start": "2006-12-01",
+    "window_end": "2018-08-31",
+    "question_count": 26
+  },
+  {
+    "patient_id": "69d687e9f9deedfdfef60698",
+    "fhir_patient_id": "9ca521d8-0612-4ac9-9211-458f4ba5d435",
+    "event_count": 892,
+    "first_event": "2013-08-13T08:41:09-04:00",
+    "last_event": "2017-11-28T07:41:09.062-05:00",
+    "window_start": "2013-08-01",
+    "window_end": "2017-11-30",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d687f7f9deedfdfef60699",
+    "fhir_patient_id": "97969dd0-35c8-44ba-8eb0-48f8b54e9c67",
+    "event_count": 442,
+    "first_event": "1993-08-09T10:48:43-04:00",
+    "last_event": "2008-04-14T10:48:43.243-04:00",
+    "window_start": "1993-08-01",
+    "window_end": "2008-04-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d687fff9deedfdfef6069a",
+    "fhir_patient_id": "76ec8764-a4ec-4d3a-bcf0-2155c31d7317",
+    "event_count": 839,
+    "first_event": "2001-01-23T10:15:44-05:00",
+    "last_event": "2017-01-10T10:15:44.873-05:00",
+    "window_start": "2001-01-01",
+    "window_end": "2017-01-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68802f9deedfdfef6069b",
+    "fhir_patient_id": "b21fe61a-27c9-46a6-a446-f4d2469eb93d",
+    "event_count": 525,
+    "first_event": "1996-07-28T05:30:28-04:00",
+    "last_event": "2017-09-10T05:30:28.583-04:00",
+    "window_start": "1996-07-01",
+    "window_end": "2017-09-30",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d68804f9deedfdfef6069c",
+    "fhir_patient_id": "abfa2d30-fccb-4e78-9ec2-8ff9264713ed",
+    "event_count": 964,
+    "first_event": "2008-10-23T05:10:38-04:00",
+    "last_event": "2016-10-13T05:10:38.131-04:00",
+    "window_start": "2008-10-01",
+    "window_end": "2016-10-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68807f9deedfdfef6069d",
+    "fhir_patient_id": "acd885a0-5b0c-4b59-97fa-8ab828f386e4",
+    "event_count": 542,
+    "first_event": "2002-08-18T06:05:55-04:00",
+    "last_event": "2015-07-05T06:05:55.031-04:00",
+    "window_start": "2002-08-01",
+    "window_end": "2015-07-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68810f9deedfdfef606a0",
+    "fhir_patient_id": "32fcbe9d-b729-4b9b-8cd8-195249c9794c",
+    "event_count": 382,
+    "first_event": "2004-03-16T10:52:31-05:00",
+    "last_event": "2017-07-11T11:52:31.194-04:00",
+    "window_start": "2004-03-01",
+    "window_end": "2017-07-31",
+    "question_count": 25
+  },
+  {
+    "patient_id": "69d68819f9deedfdfef606a4",
+    "fhir_patient_id": "7a54e9ec-99ec-420b-8161-710ec784a1b3",
+    "event_count": 412,
+    "first_event": "2007-05-27T23:34:19-04:00",
+    "last_event": "2016-07-10T23:34:19.583-04:00",
+    "window_start": "2007-05-01",
+    "window_end": "2016-07-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d6881bf9deedfdfef606a5",
+    "fhir_patient_id": "dc65e7b0-e34b-4014-b0a3-8ae17074ab55",
+    "event_count": 568,
+    "first_event": "1993-02-08T15:06:05-05:00",
+    "last_event": "2019-12-09T15:06:05.467-05:00",
+    "window_start": "1993-02-01",
+    "window_end": "2019-12-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6881ef9deedfdfef606a6",
+    "fhir_patient_id": "b5280469-52d9-4fdc-a76a-1b8208837b52",
+    "event_count": 587,
+    "first_event": "2007-07-27T17:39:03-04:00",
+    "last_event": "2018-11-30T16:39:03.904-05:00",
+    "window_start": "2007-07-01",
+    "window_end": "2018-11-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68820f9deedfdfef606a7",
+    "fhir_patient_id": "f66da926-b2cd-4f99-a4b7-979de73acd00",
+    "event_count": 431,
+    "first_event": "2002-04-09T01:22:38-04:00",
+    "last_event": "2019-08-12T01:22:38.805-04:00",
+    "window_start": "2002-04-01",
+    "window_end": "2019-08-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68822f9deedfdfef606a8",
+    "fhir_patient_id": "67bcc796-b519-4951-b69c-2dc60d0d5258",
+    "event_count": 586,
+    "first_event": "2003-01-13T21:50:49-05:00",
+    "last_event": "2017-08-21T22:50:49.767-04:00",
+    "window_start": "2003-01-01",
+    "window_end": "2017-08-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68825f9deedfdfef606a9",
+    "fhir_patient_id": "93435295-0ca3-4846-abb6-8faba6fcd3f6",
+    "event_count": 464,
+    "first_event": "2002-11-09T01:17:23-05:00",
+    "last_event": "2017-05-20T02:17:23.030-04:00",
+    "window_start": "2002-11-01",
+    "window_end": "2017-05-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6882ff9deedfdfef606ad",
+    "fhir_patient_id": "7a2f23e3-5e4b-43d6-beb7-71db69800af7",
+    "event_count": 429,
+    "first_event": "1995-02-28T21:32:44-05:00",
+    "last_event": "2020-01-28T21:32:44.211-05:00",
+    "window_start": "1995-03-01",
+    "window_end": "2020-01-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68832f9deedfdfef606ae",
+    "fhir_patient_id": "f6a25f48-5894-4a73-8345-b1101db4721a",
+    "event_count": 694,
+    "first_event": "2003-02-15T08:47:24-05:00",
+    "last_event": "2020-01-25T08:47:24.035-05:00",
+    "window_start": "2003-02-01",
+    "window_end": "2020-01-31",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d68835f9deedfdfef606af",
+    "fhir_patient_id": "1ab4a90c-a38e-4411-8ff4-9aa46b6e0fbe",
+    "event_count": 504,
+    "first_event": "1996-03-16T18:20:01-05:00",
+    "last_event": "2005-07-30T19:20:01.664-04:00",
+    "window_start": "1996-03-01",
+    "window_end": "2005-07-31",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d68837f9deedfdfef606b0",
+    "fhir_patient_id": "155793f1-0ec4-4edd-a1e0-fb7a9da7c7e0",
+    "event_count": 567,
+    "first_event": "2012-01-13T17:38:16-05:00",
+    "last_event": "2020-04-04T18:38:16.223-04:00",
+    "window_start": "2012-01-01",
+    "window_end": "2020-04-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6883af9deedfdfef606b1",
+    "fhir_patient_id": "010d66c7-c7a8-413f-ac8f-98bd58b91f0e",
+    "event_count": 610,
+    "first_event": "2000-02-25T13:04:39-05:00",
+    "last_event": "2018-02-16T13:04:39.115-05:00",
+    "window_start": "2000-02-01",
+    "window_end": "2018-02-28",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68842f9deedfdfef606b4",
+    "fhir_patient_id": "ce117845-1e0f-45cb-9b15-0cc1fd895b2e",
+    "event_count": 456,
+    "first_event": "1970-02-10T12:06:03-05:00",
+    "last_event": "1994-07-05T13:06:03.767-04:00",
+    "window_start": "1970-02-01",
+    "window_end": "1994-07-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68845f9deedfdfef606b5",
+    "fhir_patient_id": "2ff8d012-65e8-4e73-8b69-fd7f39e1bc5a",
+    "event_count": 469,
+    "first_event": "2000-12-02T06:53:02-05:00",
+    "last_event": "2018-12-29T06:53:02.102-05:00",
+    "window_start": "2000-12-01",
+    "window_end": "2018-12-31",
+    "question_count": 25
+  },
+  {
+    "patient_id": "69d68847f9deedfdfef606b6",
+    "fhir_patient_id": "a652e5f5-66b8-48e9-b5a4-1bb37e615470",
+    "event_count": 466,
+    "first_event": "1971-09-25T19:00:36-04:00",
+    "last_event": "1996-07-27T19:00:36.753-04:00",
+    "window_start": "1971-09-01",
+    "window_end": "1996-07-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68851f9deedfdfef606ba",
+    "fhir_patient_id": "a3739e6c-ba84-4ba8-9e42-bf9db63e78bc",
+    "event_count": 457,
+    "first_event": "2010-06-30T21:13:20-04:00",
+    "last_event": "2019-11-14T20:13:20.944-05:00",
+    "window_start": "2010-07-01",
+    "window_end": "2019-11-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68854f9deedfdfef606bb",
+    "fhir_patient_id": "676a26ad-d8a3-4239-9a52-057dd6eed804",
+    "event_count": 790,
+    "first_event": "2016-03-24T11:09:27-04:00",
+    "last_event": "2019-02-14T10:09:27.755-05:00",
+    "window_start": "2016-03-01",
+    "window_end": "2019-02-28",
+    "question_count": 23
+  },
+  {
+    "patient_id": "69d68860f9deedfdfef606bd",
+    "fhir_patient_id": "5778e6f4-d748-4bfa-8ad9-2d59175cce96",
+    "event_count": 481,
+    "first_event": "2003-11-05T21:31:26-05:00",
+    "last_event": "2017-01-04T21:31:26.726-05:00",
+    "window_start": "2003-11-01",
+    "window_end": "2017-01-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68864f9deedfdfef606bf",
+    "fhir_patient_id": "29218626-5547-4c54-b97d-f75a95945e99",
+    "event_count": 385,
+    "first_event": "2008-09-06T08:35:01-04:00",
+    "last_event": "2017-02-10T07:35:01.338-05:00",
+    "window_start": "2008-09-01",
+    "window_end": "2017-02-28",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d68865f9deedfdfef606c0",
+    "fhir_patient_id": "83803f51-6a7b-4ae9-9f3c-d89bfc838292",
+    "event_count": 368,
+    "first_event": "2009-05-04T09:38:27-04:00",
+    "last_event": "2017-07-29T09:38:27.613-04:00",
+    "window_start": "2009-05-01",
+    "window_end": "2017-07-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d6886cf9deedfdfef606c3",
+    "fhir_patient_id": "e96ef562-220e-4708-b405-9deabb298e52",
+    "event_count": 304,
+    "first_event": "2010-09-14T00:59:41-04:00",
+    "last_event": "2019-11-22T23:59:41.620-05:00",
+    "window_start": "2010-09-01",
+    "window_end": "2019-11-30",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d6886ff9deedfdfef606c4",
+    "fhir_patient_id": "c9b48076-0756-419c-94fd-d08c42548631",
+    "event_count": 539,
+    "first_event": "2007-09-06T16:25:56-04:00",
+    "last_event": "2017-09-28T16:25:56.611-04:00",
+    "window_start": "2007-09-01",
+    "window_end": "2017-09-30",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68873f9deedfdfef606c6",
+    "fhir_patient_id": "7c266194-ab35-4e6a-bd03-568c991e0e89",
+    "event_count": 863,
+    "first_event": "1995-04-14T14:25:27-04:00",
+    "last_event": "1998-08-28T14:25:27.834-04:00",
+    "window_start": "1995-04-01",
+    "window_end": "1998-08-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d6887bf9deedfdfef606c7",
+    "fhir_patient_id": "d6a4b28e-4c74-4a0b-8d96-ecdf61eae789",
+    "event_count": 754,
+    "first_event": "1990-05-20T17:20:19-04:00",
+    "last_event": "2008-01-27T16:20:19.242-05:00",
+    "window_start": "1990-05-01",
+    "window_end": "2008-01-31",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d68880f9deedfdfef606c9",
+    "fhir_patient_id": "20f52f35-d858-4bfa-a4b0-89c416fe5ada",
+    "event_count": 394,
+    "first_event": "1999-01-22T09:14:07-05:00",
+    "last_event": "2008-08-15T10:14:07.142-04:00",
+    "window_start": "1999-01-01",
+    "window_end": "2008-08-31",
+    "question_count": 23
+  },
+  {
+    "patient_id": "69d68882f9deedfdfef606ca",
+    "fhir_patient_id": "f630e0a2-4d6c-4eea-a76c-130e2c2cae35",
+    "event_count": 379,
+    "first_event": "2008-05-05T16:48:14-04:00",
+    "last_event": "2019-02-23T15:48:14.650-05:00",
+    "window_start": "2008-05-01",
+    "window_end": "2019-02-28",
+    "question_count": 25
+  },
+  {
+    "patient_id": "69d6888af9deedfdfef606cd",
+    "fhir_patient_id": "7a97d07f-378a-449c-a7fe-cacfa5e1855a",
+    "event_count": 321,
+    "first_event": "2013-11-04T03:46:18-05:00",
+    "last_event": "2020-01-27T03:46:18.683-05:00",
+    "window_start": "2013-11-01",
+    "window_end": "2020-01-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d6888ef9deedfdfef606cf",
+    "fhir_patient_id": "79fbc95b-043b-421a-bcee-faee10d6af35",
+    "event_count": 716,
+    "first_event": "2003-02-17T13:46:44-05:00",
+    "last_event": "2012-09-17T14:46:44.833-04:00",
+    "window_start": "2003-02-01",
+    "window_end": "2012-09-30",
+    "question_count": 24
+  },
+  {
+    "patient_id": "69d68891f9deedfdfef606d0",
+    "fhir_patient_id": "27e11433-9ce1-4f33-9301-f37b4005e79c",
+    "event_count": 461,
+    "first_event": "1980-03-06T02:10:29-05:00",
+    "last_event": "1995-05-25T03:10:29.042-04:00",
+    "window_start": "1980-03-01",
+    "window_end": "1995-05-31",
+    "question_count": 25
+  },
+  {
+    "patient_id": "69d68893f9deedfdfef606d1",
+    "fhir_patient_id": "cab30060-bf63-4cdd-b328-a9fcb8863b4d",
+    "event_count": 414,
+    "first_event": "1996-08-07T03:21:31-04:00",
+    "last_event": "2020-01-29T02:21:31.643-05:00",
+    "window_start": "1996-08-01",
+    "window_end": "2020-01-31",
+    "question_count": 25
+  },
+  {
+    "patient_id": "69d6889bf9deedfdfef606d4",
+    "fhir_patient_id": "efc7e706-e9c0-43f2-ab77-1ea74f194050",
+    "event_count": 399,
+    "first_event": "2007-06-03T08:40:18-04:00",
+    "last_event": "2018-01-28T07:40:18.137-05:00",
+    "window_start": "2007-06-01",
+    "window_end": "2018-01-31",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d6889df9deedfdfef606d5",
+    "fhir_patient_id": "9807ce8c-fd10-4537-9043-d0710460e410",
+    "event_count": 406,
+    "first_event": "2001-10-31T13:16:14-05:00",
+    "last_event": "2018-12-12T13:16:14.318-05:00",
+    "window_start": "2001-10-01",
+    "window_end": "2018-12-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d6889ff9deedfdfef606d6",
+    "fhir_patient_id": "ed7432a8-5fc5-45d5-8693-a527819fca70",
+    "event_count": 346,
+    "first_event": "2011-04-12T10:58:08-04:00",
+    "last_event": "2017-03-28T10:58:08.728-04:00",
+    "window_start": "2011-04-01",
+    "window_end": "2017-03-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d688a1f9deedfdfef606d7",
+    "fhir_patient_id": "91c352e1-d3b3-460e-929b-1108f9f977c8",
+    "event_count": 689,
+    "first_event": "1992-05-17T08:27:33-04:00",
+    "last_event": "2004-04-25T08:27:33.482-04:00",
+    "window_start": "1992-05-01",
+    "window_end": "2004-04-30",
+    "question_count": 29
+  },
+  {
+    "patient_id": "69d688a4f9deedfdfef606d8",
+    "fhir_patient_id": "c02ea0cf-2ff2-4490-b71a-031dfb9f5bf7",
+    "event_count": 324,
+    "first_event": "2005-10-15T09:05:55-04:00",
+    "last_event": "2018-02-03T08:05:55.109-05:00",
+    "window_start": "2005-10-01",
+    "window_end": "2018-02-28",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688a8f9deedfdfef606d9",
+    "fhir_patient_id": "2c656695-951b-4f2e-9fab-610064468e42",
+    "event_count": 418,
+    "first_event": "1997-07-09T09:07:22-04:00",
+    "last_event": "2014-06-15T09:07:22.574-04:00",
+    "window_start": "1997-07-01",
+    "window_end": "2014-06-30",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d688adf9deedfdfef606dc",
+    "fhir_patient_id": "fddf3bac-f14d-45a9-a0b0-690435ea799b",
+    "event_count": 349,
+    "first_event": "2016-08-31T00:00:00Z",
+    "last_event": "2020-02-05T05:57:24.362-05:00",
+    "window_start": "2016-08-01",
+    "window_end": "2020-02-29",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688aff9deedfdfef606dd",
+    "fhir_patient_id": "ce90a7d7-82f3-4687-93a0-7d6c8db6f2fc",
+    "event_count": 425,
+    "first_event": "1997-03-26T14:30:16-05:00",
+    "last_event": "2015-09-23T15:30:16.979-04:00",
+    "window_start": "1997-03-01",
+    "window_end": "2015-09-30",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688b3f9deedfdfef606df",
+    "fhir_patient_id": "322addb1-b2f2-4db0-b56d-ade83c8ead0a",
+    "event_count": 404,
+    "first_event": "1995-02-24T03:05:26-05:00",
+    "last_event": "2017-01-27T03:05:26.742-05:00",
+    "window_start": "1995-02-01",
+    "window_end": "2017-01-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688b6f9deedfdfef606e0",
+    "fhir_patient_id": "7409c0ef-8a89-4f63-a1a8-6e936a5757d3",
+    "event_count": 413,
+    "first_event": "2000-04-06T06:43:52-04:00",
+    "last_event": "2018-05-17T06:43:52.090-04:00",
+    "window_start": "2000-04-01",
+    "window_end": "2018-05-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d688bbf9deedfdfef606e2",
+    "fhir_patient_id": "ee6e5262-c050-4397-ba45-e706155e4d76",
+    "event_count": 441,
+    "first_event": "1987-06-08T17:22:38-04:00",
+    "last_event": "2004-08-19T17:22:38.953-04:00",
+    "window_start": "1987-06-01",
+    "window_end": "2004-08-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688bdf9deedfdfef606e3",
+    "fhir_patient_id": "20582f40-de29-4452-bf64-157e6d17c613",
+    "event_count": 332,
+    "first_event": "2005-08-30T09:20:02-04:00",
+    "last_event": "2018-05-16T09:20:02.410-04:00",
+    "window_start": "2005-08-01",
+    "window_end": "2018-05-31",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d688c0f9deedfdfef606e4",
+    "fhir_patient_id": "3f583fdd-bdd8-4a38-9190-be132e5adc1b",
+    "event_count": 974,
+    "first_event": "2016-02-09T15:25:39-05:00",
+    "last_event": "2019-04-23T16:25:39.080-04:00",
+    "window_start": "2016-02-01",
+    "window_end": "2019-04-30",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d688c8f9deedfdfef606e6",
+    "fhir_patient_id": "e4effebe-a8b3-4fad-b241-e7f945d1bdc7",
+    "event_count": 474,
+    "first_event": "1998-07-17T07:59:00-04:00",
+    "last_event": "2019-07-26T07:59:00.173-04:00",
+    "window_start": "1998-07-01",
+    "window_end": "2019-07-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688caf9deedfdfef606e7",
+    "fhir_patient_id": "2af970df-cd8f-45ad-9d0d-f625e20da333",
+    "event_count": 415,
+    "first_event": "1990-08-18T10:23:37-04:00",
+    "last_event": "2000-04-30T10:23:37.648-04:00",
+    "window_start": "1990-08-01",
+    "window_end": "2000-04-30",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d688cdf9deedfdfef606e8",
+    "fhir_patient_id": "1a3a1478-08a3-43cd-aaed-558b393e0742",
+    "event_count": 915,
+    "first_event": "2015-12-14T05:03:10-05:00",
+    "last_event": "2019-03-04T05:03:10.674-05:00",
+    "window_start": "2015-12-01",
+    "window_end": "2019-03-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d688d0f9deedfdfef606e9",
+    "fhir_patient_id": "f69ecce5-eb1d-43de-a048-8cb4f33b4d4c",
+    "event_count": 542,
+    "first_event": "2006-12-27T00:36:55-05:00",
+    "last_event": "2020-02-24T00:36:55.574-05:00",
+    "window_start": "2006-12-01",
+    "window_end": "2020-02-29",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688d2f9deedfdfef606ea",
+    "fhir_patient_id": "6aa9f69c-2910-411d-aa2e-b5eaa7c3b1e7",
+    "event_count": 409,
+    "first_event": "1986-07-09T02:11:02-04:00",
+    "last_event": "2002-03-13T01:11:02.153-05:00",
+    "window_start": "1986-07-01",
+    "window_end": "2002-03-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688d9f9deedfdfef606ed",
+    "fhir_patient_id": "6f1c5c00-112e-4bcd-ae37-388e6552e10e",
+    "event_count": 855,
+    "first_event": "2006-04-08T14:29:22-04:00",
+    "last_event": "2018-07-07T14:29:22.353-04:00",
+    "window_start": "2006-04-01",
+    "window_end": "2018-07-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688dbf9deedfdfef606ee",
+    "fhir_patient_id": "fd79b91b-5016-4053-82d8-5cb52a533380",
+    "event_count": 752,
+    "first_event": "1983-09-09T14:40:59-04:00",
+    "last_event": "2018-03-20T14:40:59.003-04:00",
+    "window_start": "1983-09-01",
+    "window_end": "2018-03-31",
+    "question_count": 31
+  },
+  {
+    "patient_id": "69d688ddf9deedfdfef606ef",
+    "fhir_patient_id": "e026fc6f-e39a-4c89-91bb-e8b81bb46c7c",
+    "event_count": 590,
+    "first_event": "2004-06-23T20:28:23-04:00",
+    "last_event": "2019-08-14T20:28:23.182-04:00",
+    "window_start": "2004-06-01",
+    "window_end": "2019-08-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688dff9deedfdfef606f0",
+    "fhir_patient_id": "c0b387e4-9a58-4a03-9e98-cdd99f839d4f",
+    "event_count": 566,
+    "first_event": "2001-11-25T10:21:41-05:00",
+    "last_event": "2017-01-24T10:21:41.920-05:00",
+    "window_start": "2001-11-01",
+    "window_end": "2017-01-31",
+    "question_count": 26
+  },
+  {
+    "patient_id": "69d688eaf9deedfdfef606f4",
+    "fhir_patient_id": "80cc0c70-806c-4f8b-9b19-09fc0d40ea43",
+    "event_count": 518,
+    "first_event": "1995-06-13T08:29:09-04:00",
+    "last_event": "2018-01-02T07:29:09.347-05:00",
+    "window_start": "1995-06-01",
+    "window_end": "2018-01-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d688f1f9deedfdfef606f7",
+    "fhir_patient_id": "a0c65a8f-ef0a-44bc-919b-7288d1e443f1",
+    "event_count": 489,
+    "first_event": "2004-12-24T13:01:55-05:00",
+    "last_event": "2020-01-03T13:01:55.075-05:00",
+    "window_start": "2004-12-01",
+    "window_end": "2020-01-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d688f2f9deedfdfef606f8",
+    "fhir_patient_id": "a105f929-1af0-41e8-80b2-28239c56c519",
+    "event_count": 399,
+    "first_event": "1953-01-12T00:00:00Z",
+    "last_event": "1964-10-12T05:32:13.553-04:00",
+    "window_start": "1953-01-01",
+    "window_end": "1964-10-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d688faf9deedfdfef606fb",
+    "fhir_patient_id": "874cbeae-3145-40a1-940a-b5fed8a60f99",
+    "event_count": 417,
+    "first_event": "2002-12-11T19:46:04-05:00",
+    "last_event": "2017-05-17T20:46:04.937-04:00",
+    "window_start": "2002-12-01",
+    "window_end": "2017-05-31",
+    "question_count": 33
+  },
+  {
+    "patient_id": "69d688fef9deedfdfef606fd",
+    "fhir_patient_id": "1e208b6b-77f1-4808-a32b-9f9caf1ec334",
+    "event_count": 525,
+    "first_event": "2006-08-09T23:41:09-04:00",
+    "last_event": "2018-03-14T23:41:09.044-04:00",
+    "window_start": "2006-08-01",
+    "window_end": "2018-03-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68900f9deedfdfef606fe",
+    "fhir_patient_id": "ccef190b-3282-47a3-8a38-be111c4ab299",
+    "event_count": 752,
+    "first_event": "1978-09-03T20:21:35-04:00",
+    "last_event": "2011-03-09T19:21:35.323-05:00",
+    "window_start": "1978-09-01",
+    "window_end": "2011-03-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68902f9deedfdfef606ff",
+    "fhir_patient_id": "6fa5f169-73e1-4921-bf34-4bd08f350e88",
+    "event_count": 370,
+    "first_event": "1997-08-16T07:40:08-04:00",
+    "last_event": "2017-12-20T06:40:08.148-05:00",
+    "window_start": "1997-08-01",
+    "window_end": "2017-12-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68903f9deedfdfef60700",
+    "fhir_patient_id": "1a1a8552-2654-46c0-9f26-f92f7010e923",
+    "event_count": 385,
+    "first_event": "2008-02-23T06:45:10-05:00",
+    "last_event": "2017-07-29T07:45:10.238-04:00",
+    "window_start": "2008-02-01",
+    "window_end": "2017-07-31",
+    "question_count": 28
+  },
+  {
+    "patient_id": "69d68906f9deedfdfef60701",
+    "fhir_patient_id": "ffd2246e-31c3-4cd3-99ed-62328029fa0d",
+    "event_count": 533,
+    "first_event": "1969-08-06T18:06:51-04:00",
+    "last_event": "1984-01-05T17:06:51.635-05:00",
+    "window_start": "1969-08-01",
+    "window_end": "1984-01-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d6890ef9deedfdfef60704",
+    "fhir_patient_id": "b7bd3a35-120d-4899-8e74-7e054d8a5e42",
+    "event_count": 729,
+    "first_event": "1957-07-10T04:35:30-04:00",
+    "last_event": "1982-02-23T03:35:30.108-05:00",
+    "window_start": "1957-07-01",
+    "window_end": "1982-02-28",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68910f9deedfdfef60705",
+    "fhir_patient_id": "08e997af-ca79-4834-9be3-1434145515e8",
+    "event_count": 889,
+    "first_event": "1992-04-12T11:29:04-04:00",
+    "last_event": "2011-01-16T10:29:04.181-05:00",
+    "window_start": "1992-04-01",
+    "window_end": "2011-01-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68913f9deedfdfef60706",
+    "fhir_patient_id": "11745d8d-2ab3-4a73-a768-ccb45034ed1e",
+    "event_count": 891,
+    "first_event": "2004-09-30T20:43:52-04:00",
+    "last_event": "2011-11-23T19:43:52.054-05:00",
+    "window_start": "2004-10-01",
+    "window_end": "2011-11-30",
+    "question_count": 26
+  },
+  {
+    "patient_id": "69d68915f9deedfdfef60707",
+    "fhir_patient_id": "008922e3-19ef-475c-bcbb-5d94919223a2",
+    "event_count": 636,
+    "first_event": "2001-08-10T10:57:39-04:00",
+    "last_event": "2018-04-10T10:57:39.202-04:00",
+    "window_start": "2001-08-01",
+    "window_end": "2018-04-30",
+    "question_count": 32
+  },
+  {
+    "patient_id": "69d68917f9deedfdfef60708",
+    "fhir_patient_id": "e2c277f9-4181-41de-aa92-d4de67bd1549",
+    "event_count": 660,
+    "first_event": "1985-01-06T08:07:22-05:00",
+    "last_event": "2017-01-22T08:07:22.003-05:00",
+    "window_start": "1985-01-01",
+    "window_end": "2017-01-31",
+    "question_count": 35
+  },
+  {
+    "patient_id": "69d68922f9deedfdfef6070a",
+    "fhir_patient_id": "5f00ddaf-418d-4493-9dda-4d92c590573d",
+    "event_count": 1003,
+    "first_event": "2003-06-01T04:31:47-04:00",
+    "last_event": "2004-01-30T03:31:47.420-05:00",
+    "window_start": "2003-06-01",
+    "window_end": "2004-01-31",
+    "question_count": 22
+  },
+  {
+    "patient_id": "69d6893af9deedfdfef6070b",
+    "fhir_patient_id": "483eb8dc-f305-47e9-a64f-55a0989dfe73",
+    "event_count": 838,
+    "first_event": "2007-04-28T05:28:26-04:00",
+    "last_event": "2012-05-26T05:28:26.573-04:00",
+    "window_start": "2007-04-01",
+    "window_end": "2012-05-31",
+    "question_count": 35
+  },
+  {
+    "patient_id": "69d6893ef9deedfdfef6070d",
+    "fhir_patient_id": "a6f4b943-96fe-4136-b011-bd9fe5956a0a",
+    "event_count": 653,
+    "first_event": "1997-02-18T22:35:59-05:00",
+    "last_event": "2019-10-14T23:35:59.139-04:00",
+    "window_start": "1997-02-01",
+    "window_end": "2019-10-31",
+    "question_count": 34
+  },
+  {
+    "patient_id": "69d68940f9deedfdfef6070e",
+    "fhir_patient_id": "d05c5dc9-d715-4d1c-ac78-0c474ab444fb",
+    "event_count": 948,
+    "first_event": "1973-10-01T16:06:19-04:00",
+    "last_event": "2004-10-25T16:06:19.887-04:00",
+    "window_start": "1973-10-01",
+    "window_end": "2004-10-31",
+    "question_count": 30
+  },
+  {
+    "patient_id": "69d68942f9deedfdfef6070f",
+    "fhir_patient_id": "42627ef0-ea02-4323-8059-c8dfb6125314",
+    "event_count": 536,
+    "first_event": "1981-11-30T14:02:20-05:00",
+    "last_event": "2019-11-21T14:02:20.372-05:00",
+    "window_start": "1981-11-01",
+    "window_end": "2019-11-30",
+    "question_count": 36
+  }
+]

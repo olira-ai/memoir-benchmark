@@ -1,0 +1,68 @@
+[project]
+name = "memoir-benchmark"
+version = "1.0.0"
+description = "MEMOIR: Memory Evaluation over Multi-year Oncology Inference & Retrieval"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Olira", email = "hello@olira.ai" }]
+keywords = [
+    "benchmark",
+    "clinical-ai",
+    "agent-memory",
+    "longitudinal",
+    "ehr",
+    "evaluation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "langchain>=1.3.9",
+    "langchain-core>=1.4.7",
+    # The OpenAI-compatible chat client, pointed at whatever endpoint you supply.
+    # Bypass it entirely by handing the harness a BaseChatModel you built yourself.
+    "langchain-openai>=1.3.0",
+    "pydantic>=2.11",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.24", "ruff>=0.6"]
+
+[project.urls]
+Homepage = "https://github.com/olira-ai/memoir-benchmark"
+Issues = "https://github.com/olira-ai/memoir-benchmark/issues"
+
+[project.scripts]
+memoir-run = "memoir.run:main"
+memoir-report = "memoir.report:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["memoir"]
+
+[tool.hatch.build.targets.sdist]
+# The corpus ships with the package: the benchmark is not usable without it.
+include = ["memoir", "data", "README.md", "LICENSE", "CITATION.cff"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 95
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]

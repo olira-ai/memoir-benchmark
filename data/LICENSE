@@ -1,0 +1,24 @@
+The MEMOIR corpus — Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright 2026 Olira
+
+The clinical records in `events/` are derived from HL7/CodeX mCODE Test Data,
+synthetic records generated with Synthea and released by HL7/CodeX without
+privacy or usage restrictions. They contain no real patient data.
+
+  https://confluence.hl7.org/spaces/COD/pages/80119851/mCODE+Test+Data
+  https://github.com/synthetichealth/synthea
+
+The derived material in this directory — the questions, gold answers, valid
+answers, anchor events, rationales, grading rubrics, templates, and the cohort
+manifest — is licensed under the Creative Commons Attribution 4.0 International
+License.
+
+You are free to share and adapt this material for any purpose, including
+commercially, provided you give appropriate credit, link to the license, and
+indicate if changes were made.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:           https://creativecommons.org/licenses/by/4.0/
+
+Code in this repository is licensed separately, under Apache 2.0. See ../LICENSE.

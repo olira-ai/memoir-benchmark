@@ -1,0 +1,24 @@
+# Benchmark run output
+runs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environment
+.env
+.env.local
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

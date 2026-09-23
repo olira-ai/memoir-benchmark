@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "MEMOIR: Memory Evaluation over Multi-year Oncology Inference & Retrieval"
+message: "If you use this benchmark, please cite it as below."
+type: dataset
+authors:
+  - name: "Olira"
+    website: "https://olira.ai"
+abstract: >-
+  A benchmark for the memory substrate underneath a clinical agent. 117 synthetic
+  oncology patients with complete multi-year records and 3,617 questions across
+  four tasks (point-in-time lookup, needle-in-the-record event detection,
+  clinical episode synthesis, and time-series and trajectory reasoning) with the
+  scorers that grade them and an agent harness that holds everything above the
+  memory layer constant, so the substrate is the only variable.
+keywords:
+  - benchmark
+  - clinical AI
+  - agent memory
+  - longitudinal health records
+  - temporal reasoning
+  - evaluation
+license: Apache-2.0
+repository-code: "https://github.com/olira-ai/memoir-benchmark"
+version: "1.0.0"
+date-released: "2026-09-11"
+doi: "10.5281/zenodo.22906151"
+references:
+  - type: data
+    title: "mCODE Test Data"
+    authors:
+      - name: "HL7 CodeX"
+    year: 2023
+    url: "https://confluence.hl7.org/spaces/COD/pages/80119851/mCODE+Test+Data"
+    notes: "Source synthetic oncology records the corpus is derived from."
+  - type: article
+    title: "Synthea: An approach, method, and software mechanism for generating synthetic patients and the synthetic electronic health care record"
+    authors:
+      - family-names: "Walonoski"
+        given-names: "Jason"
+    year: 2018
+    doi: "10.1093/jamia/ocx079"
